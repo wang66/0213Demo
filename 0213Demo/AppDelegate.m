@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "CoolButtonViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -16,7 +19,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
+	
+	CoolButtonViewController *coolBtnVC = [[CoolButtonViewController alloc] init];
+	UINavigationController *coolBtnNavC = [[UINavigationController alloc] initWithRootViewController:coolBtnVC];
+	self.window.rootViewController = coolBtnNavC;
+	self.window.backgroundColor = [UIColor whiteColor];
+	[self.window makeKeyAndVisible];
 	return YES;
 }
 

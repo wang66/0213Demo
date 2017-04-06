@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  0213Demo
 //
 //  Created by ZJCS on 17/2/13.
 //  Copyright © 2017年 wyw. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CommonViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface HomeViewController : CommonViewController
 
 @end
-
